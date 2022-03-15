@@ -7,9 +7,9 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    /* height: 300vh; */
     margin: 0;
-    background-color: hsl(198, 40%, 33%);
+    background-color: hsl(194, 12%, 35%);
 }
 
 .titulo{
@@ -214,58 +214,15 @@ body{
 }
 
 .social-list {
-    display: inline-flex
+    display: inline-flex;
 }
 
 .social-list li {
     list-style: none;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
-.maincard {
-    position: relative;
-    width: 120px;
-    height: 80px
-}
 
-.thecard {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease
-}
-
-.thecard:hover {
-    transform: rotateY(180deg)
-}
-
-.thefront {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: hidden;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid #eee;
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    padding: 4px
-}
-
-.theback {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-color: hidden;
-    color: #fff;
-    border-radius: 10px;
-    transform: rotateY(180deg);
-    border: 1px solid #eee;
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    padding: 4px
-}
 
 .social-text small {
     font-size: 20px
@@ -277,22 +234,165 @@ body{
     }
 }
 
-.linkedin {
-    background: #021f5e
+.dark div{
+  
+    border-bottom:solid 3px white;
+    width:20%;
+    height:50px;
+    margin-left: 450px;
+  }
+
+
+  /* about section image css */
+.imageAboutPage {
+    width: 80%;
+    border-radius: 20px;
 }
 
-.twitter {
-    background: #9ccaf0
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.github {
-    background: #0c0c0c
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.whatsapp {
-    background: #4dc247
+
+
+.wrapper {
+  display: inline-flex;
 }
 
-.pinterest {
-    background: #cb2027
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin{
+    background: #021f5e;
+}
+
+.twitter{
+    background: #46c1f6;
+}
+
+.github{
+    background: #0c0c0c;
+}
+
+.Whatsapp{
+    background: #4dc247;
+
+}
+
+a{
+    color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #021f5e;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {    
+    background-color: #46c1f6;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {    
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.wrapper .Whatsapp:hover,
+.wrapper .Whatsapp:hover .tooltip,
+.wrapper .Whatsapp:hover .tooltip::before {
+    background-color: #4dc247;
+    color: #ffffff;
+}
+
+.icon{
+    float: left;
+    height: 150px;
+    width: 150px;
+
 }
