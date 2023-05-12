@@ -1,0 +1,20 @@
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(180, 7%, 37%);
+    flex-direction: column;
+}
+
+#start {
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+
+#game {
+    background-color: #ccc;
+    margin-top: 2rem;
+    border: 2px solid #333;
+}
